@@ -467,7 +467,7 @@ std::wstring print_mode(size_t width, size_t height, double fps, bool interlaced
 
 bool is_valid_file(const std::wstring filename, const std::vector<std::wstring>& invalid_exts)
 {
-	static std::vector<std::wstring> valid_exts = boost::assign::list_of(L".m2t")(L".mov")(L".mp4")(L".dv")(L".flv")(L".mpg")(L".wav")(L".mp3")(L".dnxhd")(L".h264")(L".prores");
+	static std::vector<std::wstring> valid_exts = boost::assign::list_of(L".m2t")(L".ts")(L".mov")(L".mp4")(L".dv")(L".flv")(L".mpg")(L".mkv")(L".wav")(L".mp3")(L".dnxhd")(L".h264")(L".prores");
 
 	auto ext = boost::to_lower_copy(boost::filesystem::wpath(filename).extension());
 		

@@ -211,7 +211,8 @@ std::wstring MediaInfo(const boost::filesystem::wpath& path)
 			    extension == TEXT(".DV") || extension == TEXT(".MOV") || 
 				extension == TEXT(".MPG") || extension == TEXT(".AVI") || 
 				extension == TEXT(".MP4") || extension == TEXT(".FLV") || 
-				extension == TEXT(".STGA") || 
+				extension == TEXT(".STGA") || extension == TEXT(".MKV") ||
+				extension == TEXT(".TS") ||
 				caspar::ffmpeg::is_valid_file(path.file_string()))
 			clipttype = TEXT(" MOVIE ");
 
